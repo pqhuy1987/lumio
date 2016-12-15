@@ -1,0 +1,33 @@
+PODS:
+  - Bugsnag (5.2.0):
+    - KSCrash/RecordingAdvanced (~> 1.5.8)
+  - cocos2d (2.0):
+    - cocos2d/CocosDenshion (= 2.0)
+  - cocos2d/CocosDenshion (2.0)
+  - KSCrash/no-arc (1.5.8)
+  - KSCrash/Recording (1.5.8):
+    - KSCrash/no-arc
+  - KSCrash/RecordingAdvanced (1.5.8):
+    - KSCrash/Recording
+
+DEPENDENCIES:
+  - Bugsnag (from `https://github.com/bugsnag/bugsnag-cocoa.git`)
+  - cocos2d (~> 2.0.0)
+
+EXTERNAL SOURCES:
+  Bugsnag:
+    :git: https://github.com/bugsnag/bugsnag-cocoa.git
+
+CHECKOUT OPTIONS:
+  Bugsnag:
+    :commit: 002306646753a1080687bd11fcaa434b7b1ca3e9
+    :git: https://github.com/bugsnag/bugsnag-cocoa.git
+
+SPEC CHECKSUMS:
+  Bugsnag: 9b02e58455d073df74d9e8538c8e2250422f44d0
+  cocos2d: f127fbbaff592614e0b40baa4e47d9dbc934fed8
+  KSCrash: c42d10db8b2f12b3585973c318b971a1ea4e7acb
+
+PODFILE CHECKSUM: 6cdd308f73611c43d0c04e995bd8353ea32d29a2
+
+COCOAPODS: 1.1.1
