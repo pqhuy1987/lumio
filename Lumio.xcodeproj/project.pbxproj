@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6E7C157FB3A57687F6CCAEFA /* libPods-Lumio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90977033338151525B545F62 /* libPods-Lumio.a */; };
+		97AF95BE1E031981004D27BC /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97AF95BD1E031981004D27BC /* Media.xcassets */; };
 		B00ABDA016D826C200DC78F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B00ABD9F16D826C200DC78F4 /* AppDelegate.m */; };
 		B00ABDA316D826E400DC78F4 /* CCLayerWithTransparency.m in Sources */ = {isa = PBXBuildFile; fileRef = B00ABDA216D826E400DC78F4 /* CCLayerWithTransparency.m */; };
 		B00ABDA616D8275200DC78F4 /* BaseMenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B00ABDA516D8275200DC78F4 /* BaseMenuLayer.m */; };
@@ -198,6 +199,7 @@
 		5655A3B84B5996CD0AE3E36E /* Pods-Lumio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lumio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lumio/Pods-Lumio.debug.xcconfig"; sourceTree = "<group>"; };
 		90977033338151525B545F62 /* libPods-Lumio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lumio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90FA4A23BB2C9E808BB0D533 /* Pods-Lumio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lumio.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lumio/Pods-Lumio.release.xcconfig"; sourceTree = "<group>"; };
+		97AF95BD1E031981004D27BC /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		B00ABD9E16D826BD00DC78F4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Lumio/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		B00ABD9F16D826C200DC78F4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Lumio/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		B00ABDA116D826DF00DC78F4 /* CCLayerWithTransparency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCLayerWithTransparency.h; path = Lumio/CCLayerWithTransparency.h; sourceTree = SOURCE_ROOT; };
@@ -611,6 +613,7 @@
 		B01B28BE16AB2B5200CD538A = {
 			isa = PBXGroup;
 			children = (
+				97AF95BD1E031981004D27BC /* Media.xcassets */,
 				B01B28DF16AB2B5200CD538A /* Lumio */,
 				B01B28CC16AB2B5200CD538A /* Frameworks */,
 				B01B28CA16AB2B5200CD538A /* Products */,
@@ -879,6 +882,7 @@
 				B0DBC81C16D961D70050F9CF /* NewMainMenuButton-hd.png in Resources */,
 				B0DBC81E16D961DC0050F9CF /* NewMainMenuButtonSelected-hd.png in Resources */,
 				B0DBC83E16DA7B480050F9CF /* music.mp3 in Resources */,
+				97AF95BE1E031981004D27BC /* Media.xcassets in Resources */,
 				B0DBC84016DA7B8B0050F9CF /* OffButton-hd.png in Resources */,
 				B0DBC84216DA7B8E0050F9CF /* OffButtonSelected-hd.png in Resources */,
 				B0DBC84416DA7B940050F9CF /* OnButton-hd.png in Resources */,
@@ -1148,6 +1152,8 @@
 			baseConfigurationReference = 5655A3B84B5996CD0AE3E36E /* Pods-Lumio.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = JQNK74493B;
@@ -1158,7 +1164,7 @@
 				INFOPLIST_FILE = Lumio/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.lumio.100;
 				PRODUCT_NAME = Lumio;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Pods/cocos2d/CocosDenshion/CocosDenshion\"";
@@ -1171,6 +1177,8 @@
 			baseConfigurationReference = 90FA4A23BB2C9E808BB0D533 /* Pods-Lumio.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = JQNK74493B;
@@ -1180,7 +1188,7 @@
 				INFOPLIST_FILE = Lumio/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.lumio.100;
 				PRODUCT_NAME = Lumio;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Pods/cocos2d/CocosDenshion/CocosDenshion\"";
@@ -1226,6 +1234,8 @@
 			baseConfigurationReference = F910B1E63BED738929942EEA /* Pods-Lumio.appstore.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = JQNK74493B;
@@ -1235,7 +1245,7 @@
 				INFOPLIST_FILE = Lumio/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio;
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.lumio.100;
 				PRODUCT_NAME = Lumio;
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Pods/cocos2d/CocosDenshion/CocosDenshion\"";

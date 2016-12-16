@@ -49,11 +49,11 @@
                                                 target:self
                                                 selector:@selector(leaderboardButtonTapped:)];
         
-        CCMenuItemImage *reviewAppMenuItem = [CCMenuItemImage
-                                              itemWithNormalImage:@"LeaveARatingButton.png"
-                                              selectedImage:@"LeaveARatingButtonSelected.png"
-                                              target:self
-                                              selector:@selector(reviewAppButtonTapped:)];
+//        CCMenuItemImage *reviewAppMenuItem = [CCMenuItemImage
+//                                              itemWithNormalImage:@"LeaveARatingButton.png"
+//                                              selectedImage:@"LeaveARatingButtonSelected.png"
+//                                              target:self
+//                                              selector:@selector(reviewAppButtonTapped:)];
         
         CCMenuItemImage *creditsMenuItem = [CCMenuItemImage
                                             itemWithNormalImage:@"CreditsButton.png"
@@ -61,7 +61,7 @@
                                             target:self
                                             selector:@selector(creditsButtonTapped:)];
         
-        CCMenu *menu = [CCMenu menuWithItems:howToPlayMenuItem, leaderboardMenuItem, reviewAppMenuItem, creditsMenuItem, nil];
+        CCMenu *menu = [CCMenu menuWithItems:howToPlayMenuItem, leaderboardMenuItem, /*reviewAppMenuItem,*/ creditsMenuItem, nil];
         menu.position = ccp(ABOUT_MENU_X_COORD, size.height == 568 ? ABOUT_MENU_Y_COORD + FOUR_INCH_SCREEN_HEIGHT_ADJUSTMENT : ABOUT_MENU_Y_COORD); //230
         [menu alignItemsVerticallyWithPadding:MENU_PADDING];
         [self addChild:menu];
@@ -99,7 +99,8 @@
 {
     //open up the review page of the app in the app store.
     NSString *appID = APPLE_ID;
-    NSString *urlstring = [NSString stringWithFormat: @"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%@", appID];
+    NSString *urlstring = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=%@&onlyLatestVersion=true&pageNumber=0&sortOrdering=1&type=Purple+Software"
+, appID];
     [[UIApplication sharedApplication] openURL: [NSURL URLWithString:urlstring]];
 }
 
